@@ -150,9 +150,9 @@ class Cart
 
         $content->put($item->rowId, $item);
 
-        $this->events->dispatch('cart.added', $item);
-
         $this->session->put($this->instance, $content);
+
+        $this->events->dispatch('cart.added', $item);
 
         return $item;
     }
@@ -196,9 +196,9 @@ class Cart
             $content->put($cartItem->rowId, $cartItem);
         }
 
-        $this->events->dispatch('cart.updated', $cartItem);
-
         $this->session->put($this->instance, $content);
+
+        $this->events->dispatch('cart.updated', $cartItem);
 
         return $cartItem;
     }
@@ -218,9 +218,9 @@ class Cart
 
         $content->pull($cartItem->rowId);
 
-        $this->events->dispatch('cart.removed', $cartItem);
-
         $this->session->put($this->instance, $content);
+
+        $this->events->dispatch('cart.removed', $cartItem);
     }
 
     /**
@@ -618,11 +618,11 @@ class Cart
             $content->put($cartItem->rowId, $cartItem);
         }
 
-        $this->events->dispatch('cart.restored');
-
         $this->session->put($this->instance, $content);
 
         $this->instance($currentInstance);
+
+        $this->events->dispatch('cart.restored');
 
         $this->getConnection()->table($this->getTableName())
             ->where('identifier', $identifier)->delete();
