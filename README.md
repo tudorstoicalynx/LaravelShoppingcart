@@ -11,11 +11,11 @@ This is a fork of [Crisane's LaravelShoppingcart](https://github.com/Crinsane/La
 
 ## Installation
 
-Install the [package](https://packagist.org/packages/bumbummen99/shoppingcart) through [Composer](http://getcomposer.org/). 
+Install the [package](https://packagist.org/packages/tudorstoicalynx/shoppingcart) through [Composer](http://getcomposer.org/). 
 
 Run the Composer require command from the Terminal:
 
-    composer require bumbummen99/shoppingcart
+    composer require tudorstoicalynx/shoppingcart
 
 Now you're ready to start using the shoppingcart in your application.
 
