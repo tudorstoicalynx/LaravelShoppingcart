@@ -3,18 +3,6 @@
     "description": "Laravel Shoppingcart",
     "keywords": ["laravel", "shoppingcart"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Rob Gloudemans",
-            "email": "info@robgloudemans.nl",
-            "homepage": "http://robgloudemans.nl/"
-        },
-        {
-            "name": "Patrick Henninger",
-            "email": "privat@skyraptor.eu",
-            "homepage": "https://skyraptor.eu/"
-        }
-    ],
     "require": {
         "illuminate/support": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*",
         "illuminate/session": "5.4.*||5.5.*||5.6.*||5.7.*||5.8.*",
